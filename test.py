@@ -1,5 +1,14 @@
+numbers = [12, 75, 150, 180, 145, 525, 50]
 
-f = open('test.txt', 'w')
-for i in range(10):
-    f.write(f'{i}번째 줄입니다.\n')
-f.close()
+for number in numbers:
+
+    if number > 500:
+        break
+
+    if number % 5 != 0:
+        continue
+
+    if number > 150:
+        continue
+
+    print(number)
